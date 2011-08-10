@@ -1,6 +1,9 @@
 nachteule.wcf.router
 ====================
 
+Status: Noch nicht fertig. Routen müssen noch in die Tabelle `wcf1_route`
+eingetragen und danach der Cache gelöscht werden.
+
 Mit diesem Paket kann man Routen anlegen, auf die Requests geroutet werden.
 Letztendlich wird aber nur die Adresszeile schöner :)
 
