@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package name="nachteule.wcf.router" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Router]]></packagename>
+		<isunique>1</isunique>
+		<version>1.0.0 alpha 1</version>
+		<date>2011-08-10</date>
+		<plugin>com.woltlab.wcf</plugin>
+	</packageinformation>
+	
+	<authorinformation>
+		<author><![CDATA[Nachteule`]]></author>
+	</authorinformation>
+	
+	<instructions type="install">
+		<sql>install.sql</sql>
+		<files>files.tar</files>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<options>options.xml</options>
+	</instructions>
+</package>
