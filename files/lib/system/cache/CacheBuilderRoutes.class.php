@@ -43,9 +43,9 @@ class CacheBuilderRoutes implements CacheBuilder {
 		foreach ($this->routes as $route => $url) {
 			$requiredArguments = array();
 			$requiredValues = array();
-			$regexp = $route;
+			$regexp = preg_quote($route, '#');
 			
-			preg_match_all('/\{(|\#)\$([^\}]+)}/', $route, $matches, PREG_SET_ORDER);
+			preg_match_all('/\\\{(|\\\#)\\\$([^\}]+)\\\}/', $route, $matches, PREG_SET_ORDER);
 			foreach ($matches as $match) {
 				if (!in_array($match[2], $requiredArguments))
 					$requiredArguments[] = $match[2];
